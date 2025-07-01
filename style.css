@@ -1,0 +1,192 @@
+  .btn-custom {
+    background-color: #7F56D9 !important;
+    border-color: #7F56D9;
+  }
+
+  .nav-item .btn-custom{
+    border-radius: 8px;
+  }
+  .btn-custom:hover {
+    background-color: #6731db !important;
+    transform: scale(0.9);
+  }
+  
+  .nav-item-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 20px;
+    background-color: #F9F5FF;
+  }
+
+  .badge-custom{
+    background-color: 
+    #f4effd!important;
+  }
+
+  .jumbotron .badge {
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 500;
+    width: 157px;
+    height: 28px;
+    padding: 4px, 12px, 4px, 12px;
+    border-radius: 16px; 
+    color: #6941C6;
+  }
+
+  .jumbotron .upskill{
+    font-size: 48px;
+    font-family: inter;
+    font-weight: 600;
+    color: #42307D;
+  }
+
+  .jumbotron .potensi{
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 400;
+    color: #6941C6;
+  }
+
+  .jumbotron .form-custom {
+    width: 320px; 
+  }
+
+  .custom-card-height {
+    height: 595px; 
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.card-title {
+    margin-bottom: 1rem;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-title-2{
+  font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text-check{
+  font-family: inter;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.harga{
+  font-family: inter;
+  margin-top: 1rem;
+}
+
+.harga .harga-normal{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.harga .harga-diskon{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.d-flex .btn{
+  border-radius: 8px;
+  width: 320px;
+  background-color: #7F56D9;
+  font-family: inter;
+  font-weight: 600;
+  margin-top: -15px;
+  margin-bottom: 1.5rem ;
+}
+
+.d-flex .btn:hover{
+  background-color: #7c4ede ;
+}
+
+.footer .row{
+  font-family: inter;
+}
+
+.footer .row .column-title{
+  color: #98A2B3;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem ;
+}
+
+.footer .row p{
+  color: #667085;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.page-item.disabled .page-link {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.footer{
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+.logo-footer{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid rgb(230, 230, 230);
+}
+
+.logo-footer p{
+  color:#98A2B3;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.badge-custom-footer{
+  background-color:#ECFDF3;
+  color:#027A48 !important;
+  margin-left: 10px;
+  border-radius: 16px;
+}
+
+.pagination .page-link {
+  color: #1D2939; 
+}
+
+.pagination .page-item.active .page-link {
+  color: #1D2939; 
+  background-color: transparent; 
+  border-color: #6c757d;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d; 
+}
+
+.pagination .page-link:hover {
+  color: #1D2939; 
+}

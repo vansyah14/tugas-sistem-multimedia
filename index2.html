@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+    </style>
+</head>
+  <body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-light ">
+            <div class="container-fluid mx-5">
+              <a class="navbar-brand" href="#">
+                <img src="Logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="font-family: inter ; font-weight: 600; font-size: 16px; color: #667085;">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active" aria-current="page" href="index.html#product" style="font-family: inter ; font-weight: 600; font-size: 16px; color: #667085;">Product</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active" aria-current="page" href="index2.html" style="font-family: inter ; font-weight: 600; font-size: 16px; color: #667085;">Resource</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#product" style="font-family: inter; font-weight: 600; font-size: 16px; color: #667085;">Pricing</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Quiz.html" style="font-family: inter; font-weight: 600; font-size: 16px; color: #667085;">Mini Quiz</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-item-center">
+                        <li class="nav-item">
+                          <a class="nav-link active bm-1" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="signup.html"><button type="button" class="btn btn-custom text-light">Sign up</button></a>
+                        </li>
+                      </ul>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- jumbotron -->
+    <section class="jumbotron">
+      <div class="jumbotron jb mx-5 mb-4 mt-4">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="Image.png" alt="Image" class="jumbotron-img img-fluid">
+          </div>
+          <div class="col-md-6">
+            <div class="jb-text mt-4">
+              <p class="intensive">Intensive Bootcamp</p>
+              <p class="web">Web Development Bootcamp</p>
+              <div class="row mt-5">
+                <div class="col-6 ">
+                  <p class="jb-number">400+</p>
+                  <p class="jb-text2">Portfolio Siswa</p>
+                </div>
+                <div class="col-6">
+                  <p class="jb-number">80%</p>
+                  <p class="jb-text2">Alumni diterima kerja</p>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-6">
+                  <p class="jb-number">10k</p>
+                  <p class="jb-text2">Anggota Komunitas</p>
+                </div>
+                <div class="col-6">
+                  <p class="jb-number">2000+</p>
+                  <p class="jb-text2">Testimoni</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <!-- mentor card-->
+    <div class="container mt-5">
+      <div class="text-center p-5">
+        <h1 class="mentor text-center">Mentor</h1>
+        <p class="dipandu">Dipandu oleh Mentor Terbaik Kami</p>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- card 1 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar.png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Agnes Amanta</h6>
+                <h6 class="jabatan">Founder & CEO</h6>
+              </div>
+              <div class="r2">
+                <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (1).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Kajen Permadi</h6>
+                <h6 class="jabatan">Engineering Manager</h6>
+              </div>
+              <div class="r2">
+                <p>Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (2).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Natsir Naradi</h6>
+                <h6 class="jabatan">Product Manager</h6>
+              </div>
+              <div class="r2">
+                <p>Former PM for Linear, Lambda School, and On Deck.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 4 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (3).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Rahimah Gilda</h6>
+                <h6 class="jabatan">Frontend Developer</h6>
+              </div>
+              <div class="r2">
+                <p>Former frontend dev for Linear, Coinbase, and Postscript.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 5 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (4).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Suartini Novi</h6>
+                <h6 class="jabatan">Backend Developer</h6>
+              </div>
+              <div class="r2">
+                <p>Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 6 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (5).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Hannah Airlangga</h6>
+                <h6 class="jabatan">Product Designer</h6>
+              </div>
+              <div class="r2">
+                <p>Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 7 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (6).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Firman Kurniawan</h6>
+                <h6 class="jabatan">UX Researcher</h6>
+              </div>
+              <div class="r2">
+                <p>Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 8 -->
+        <div class="col">
+          <div class="card custom-card">
+            <img src="Avatar (7).png" class="card-img-top custom-card-img" alt="...">
+            <div class="card-body text-center">
+              <div class="r1">
+                <h6 class="nama">Mario Agustinus</h6>
+                <h6 class="jabatan">Customer Success</h6>
+              </div>
+              <div class="r2">
+                <p>Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+              </div>
+              <div class="r3 mx-3">
+                <img src="Social icon.png" alt="">
+                <img src="Social icon (1).png" alt="">
+                <img src="Social icon (2).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- fasilitas -->
+    <div class="container mt-5">
+      <div class="text-center p-5">
+        <h1 class="mentor text-center">Fasilitas</h1>
+        <p class="dipandu">Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-1">
+        <!-- card 1 -->
+        <div class="col">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon.png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">Komunitas</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon (1).png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">1-on-1 Session</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon (2).png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">Active Learning</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 4 -->
+        <div class="col">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon (3).png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">Happy Atmosphere</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 5 -->
+        <div class="col">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon (4).png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">Tugas</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+    
+        <!-- card 6 -->
+        <div class="col mb-5">
+          <div class="card custom-card-fasilitas">
+            <img src="Featured icon (5).png" class="d-block mx-auto mt-2 custom-img-size" alt="...">
+            <div class="card-body text-center">
+              <div class="r-fasilitas">
+                <p class="fasilitas-text">Intensive Bootcamp</p>
+                <p class="support-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- materi -->
+  <div class="my-5 d-flex justify-content-center">
+    <div class="materi-container">
+      <h1 class="materi-title">Materi</h1>
+      
+      <!-- Card Container -->
+      <div class="card-container">
+        <div class="card mb-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h2>Introduction to Web Development</h2>
+              <p class="materi">Belajar logika dan hal-hal dasar untuk mempersiapkan kamu belajar pengembangan web.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card mb-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h2>Introduction to Web Development</h2>
+              <p class="materi">Belajar logika dan hal-hal dasar untuk mempersiapkan kamu belajar pengembangan web.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card mb-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h2>Introduction to Web Development</h2>
+              <p class="materi">Belajar logika dan hal-hal dasar untuk mempersiapkan kamu belajar pengembangan web.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h2>Introduction to Web Development</h2>
+              <p class="materi">Belajar logika dan hal-hal dasar untuk mempersiapkan kamu belajar pengembangan web.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Daftar kelas sekarang</h1>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+          <div>
+            <button class="btn btn-primary m-2">
+              <a href="index3.html" class="text-white text-decoration-none">Hubungi CS</a>
+            </button>
+            <button class="btn btn-success m-2">
+              <a href="index3.html" class="text-white text-decoration-none">Daftar sekarang</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>Join over 10,000+ students already growing with Edspert</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start py-3">
+      <!-- Footer Section -->
+      <div class="footer d-flex flex-column mb-3 mb-md-0" style="width: 320px;">
+        <!-- Logo and Footer Text -->
+        <img src="Logo.png" alt="Logo" class="footer-logo">
+        <p class="footer-text mb-0 mt-2">
+          Design amazing digital experiences that create more happy in the world.
+        </p>
+      </div>
+    
+      <!-- Footer Links -->
+      <div class="row w-75">
+        <div class="col-md-2">
+          <div class="column-title">Product</div>
+          <p>Overview</p>
+          <p>Features</p>
+          <p class="d-flex">
+            Solutions <span class="badge badge-custom-footer text-badge-custom rounded-pill">New</span>
+          </p>
+          <p>Tutorials</p>
+          <p>Pricing</p>
+          <p>Releases</p>
+        </div>
+        <div class="col-md-2">
+          <div class="column-title">Company</div>
+          <p>About us</p>
+          <p>Careers</p>
+          <p>Press</p>
+          <p>News</p>
+          <p>Media kit</p>
+          <p>Contact</p>
+        </div>
+        <div class="col-md-2">
+          <div class="column-title">Resources</div>
+          <p>Blog</p>
+          <p>Newsletter</p>
+          <p>Events</p>
+          <p>Help centre</p>
+          <p>Tutorials</p>
+          <p>Support</p>
+        </div>
+        <div class="col-md-2">
+          <div class="column-title">Use cases</div>
+          <p>Startups</p>
+          <p>Enterprise</p>
+          <p>Government</p>
+          <p>SaaS</p>
+          <p>Marketplaces</p>
+          <p>Ecommerce</p>
+        </div>
+        <div class="col-md-2">
+          <div class="column-title">Social</div>
+          <p>Twitter</p>
+          <p>LinkedIn</p>
+          <p>Facebook</p>
+          <p>GitHub</p>
+          <p>AngelList</p>
+          <p>Dribbble</p>
+        </div>
+        <div class="col-md-2">
+          <div class="column-title">Legal</div>
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+          <p>Licenses</p>
+          <p>Settings</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex logo-footer justify-content-between align-items-center py-3">
+      <p>© 2077 Untitled UI. All rights reserved.</p>
+      <div class="medsos-footer">
+        <img src="Social icon.png" alt="">
+        <img src="Social icon (1).png" alt="">
+        <img src="Vector.png" alt="">
+        <img src="Social icon (4).png" alt="">
+        <img src="Social icon (5).png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+  </body>
+</html>

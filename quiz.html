@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Interaktif</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+
+    .quiz-container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .question {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .answer {
+      margin: 10px 0;
+    }
+
+    .media {
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #backBtn {
+      background-color: #7c3aed;
+    }
+
+    #backBtn:hover {
+      background-color: #5b21b6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="quiz-container">
+    <div id="question" class="question"></div>
+    <div class="media" id="media"></div>
+    <div id="answers"></div>
+    <button onclick="prevQuestion()" id="prevBtn" style="display:none; background-color: #5b21b6;">Sebelumnya</button>
+    <button onclick="nextQuestion()" id="nextBtn" style="background-color: #5b21b6;">Selanjutnya</button>
+    <div id="result"></div>
+    <div style="text-align:center; margin-top: 20px;">
+      <a href="index.html"><button id="backBtn" style="display: none;">Kembali ke Beranda</button></a>
+    </div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        question: "Di kota manakah Monas berada?",
+        options: ["Surabaya", "Bandung", "Jakarta", "Medan"],
+        correct: "Jakarta",
+        media: "<img src='/asset/monas2.jpg' width='100%' alt='Monas'>"
+      },
+      {
+        question: "Apa nama lagu kebangsaan ini?",
+        options: ["Indonesia Raya", "Tanah Airku", "Halo-halo Bandung", "Garuda Pancasila"],
+        correct: "Indonesia Raya",
+        media: "<audio controls><source src='/asset/Indonesia-raya.mpeg' type='audio/mpeg'></audio>"
+      },
+      {
+        question: "Apa nama lagu ini?",
+        options: ["Bendera", "Garuda Pancasila", "Peta", "Lambang provinsi"],
+        correct: "Garuda Pancasila",
+        media: `<iframe width="100%" height="315" 
+              src="https://www.youtube.com/embed/JTZhCGbsCSI?si=ubzU37lFHMg6owws" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+    let userAnswers = Array(questions.length).fill(null);
+
+    function loadQuestion() {
+      const q = questions[currentQuestion];
+      document.getElementById("question").innerText = q.question;
+      document.getElementById("media").innerHTML = q.media;
+
+      const answersDiv = document.getElementById("answers");
+      answersDiv.innerHTML = "";
+
+      q.options.forEach(option => {
+        const isChecked = userAnswers[currentQuestion] === option ? 'checked' : '';
+        const input = `<div class="answer"><input type="radio" name="answer" value="${option}" ${isChecked}> ${option}</div>`;
+        answersDiv.innerHTML += input;
+      });
+
+      document.getElementById("prevBtn").style.display = currentQuestion > 0 ? "inline-block" : "none";
+    }
+
+    function nextQuestion() {
+      const selected = document.querySelector('input[name="answer"]:checked');
+      if (!selected) {
+        alert("Pilih jawaban terlebih dahulu!");
+        return;
+      }
+
+      const answer = selected.value;
+      const previousAnswer = userAnswers[currentQuestion];
+      userAnswers[currentQuestion] = answer;
+
+      // Update skor hanya jika jawabannya baru atau berubah
+      if (answer === questions[currentQuestion].correct && previousAnswer !== questions[currentQuestion].correct) {
+        score++;
+      }
+      if (answer !== questions[currentQuestion].correct && previousAnswer === questions[currentQuestion].correct) {
+        score--;
+      }
+
+      currentQuestion++;
+
+      if (currentQuestion < questions.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+      }
+    }
+
+    function showResult() {
+      document.getElementById("question").style.display = "none";
+      document.getElementById("media").style.display = "none";
+      document.getElementById("answers").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("prevBtn").style.display = "none";
+
+      document.getElementById("result").innerHTML = `🎉 Skor akhir Anda: <span style="color:#7c3aed">${score}</span> dari <strong>${questions.length}</strong>`;
+      document.getElementById("backBtn").style.display = "inline-block";
+    }
+
+    window.onload = loadQuestion;
+  </script>
+
+</body>
+
+</html>
